@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Дэвид Слабковский](https://up.htmlacademy.ru/htmlcss-individual/2/user/1108475).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Сайт проекта: [Седона](https://demeward.github.io/1108475-sedona-2/).
 
 ---
 
