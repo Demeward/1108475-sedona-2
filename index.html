@@ -215,5 +215,59 @@
       </footer>
     </div>
 
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2 class="title title_h2">Поиск гостиницы в&nbsp;Седоне</h2>
+        <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal__layout">
+            <div class="input">
+              <label for="date-arrival" class="input__label">Дата Заезда:</label>
+              <div class="input__wrapper input__wrapper_date">
+                <input type="text" name="date-arrival" id="date-arrival" value="27 апреля 2020" placeholder="Укажите дату" required>
+                <p class="input__message input__message_error">Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.</p>
+              </div>
+            </div>
+            <div class="input">
+              <label for="date-departure" class="input__label">Дата Выезда:</label>
+              <div class="input__wrapper input__wrapper_date">
+                <input type="text" name="date-departure" id="date-departure" value="1 сентября 2023" placeholder="Укажите дату" required>
+                <p class="input__message">На&nbsp;эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </div>
+            <div class="modal__input-wrapper">
+              <div class="input">
+                <label for="adults" class="input__label">Взрослые:</label>
+                <div class="input__wrapper input__wrapper_number">
+                  <button type="button" class="input__decrease" aria-label="Уменьшить количество"></button>
+                  <input type="number" name="adults-number" id="adults" value="2" min="1">
+                  <button type="button" class="input__increase" aria-label="Увеличить количество"></button>
+                </div>
+              </div>
+              <div class="input">
+                <label for="children" class="input__label">Дети:</label>
+                <button type="button" class="input__info-btn" aria-label="Открыть пояснение">
+                  <span class="input__info">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются бесплатно.</span>
+                </button>
+                <div class="input__wrapper input__wrapper_number">
+                  <button type="button" class="input__decrease" aria-label="Уменьшить количество"></button>
+                  <input type="number" name="children-number" id="children" value="2" min="0">
+                  <button type="button" class="input__increase" aria-label="Увеличить количество"></button>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="modal__submit btn btn_blue">Найти</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector(".search-hotel__popup-btn").addEventListener("click", () => {
+        document.querySelector(".modal-overlay").classList.add("modal-overlay_opened");
+      })
+    </script>
+
   </body>
 </html>
