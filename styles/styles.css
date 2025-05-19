@@ -195,11 +195,10 @@ img {
 
 .btn_transparent:focus-visible {
   background-color: transparent;
-  box-shadow: 0 0 0 3px var(--color-seagull);
+  outline: 3px solid var(--color-seagull);
 }
 
 .btn_transparent:active {
-  box-shadow: none;
   color: var(--color-transparent);
 }
 
@@ -603,7 +602,6 @@ img {
   border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  outline: none;
 }
 
 .subscribe__container input::placeholder {
@@ -616,7 +614,7 @@ img {
 
 .subscribe__container input:focus-visible {
   background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px var(--color-seagull);
+  outline: 3px solid var(--color-seagull);
 }
 
 .subscribe__button {
@@ -640,6 +638,8 @@ img {
   display: flex;
   font-size: 40px;
   line-height: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
   color: var(--color-default-black);
   text-decoration: none;
   outline: none;
@@ -874,7 +874,7 @@ img {
 }
 
 .hotels__filter-text:has(input:focus-visible).hotels__filter-text::after {
-  box-shadow: 0 0 0 3px var(--color-seagull);
+  outline: 3px solid var(--color-seagull);
 }
 
 .hotels__filter-text:active {
@@ -902,7 +902,6 @@ img {
   background-color: var(--color-white-smoke);
   appearance: none;
   -moz-appearance: textfield;
-  outline: none;
 }
 
 .hotels__filter-price input::-webkit-outer-spin-button,
@@ -911,12 +910,12 @@ img {
   margin: 0;
 }
 
-.hotels__filter-price input[name="min-price"] {
+.hotels__filter-price input:first-of-type {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.hotels__filter-price input[name="max-price"] {
+.hotels__filter-price input:last-of-type {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -927,7 +926,7 @@ img {
 
 .hotels__filter-price input:focus-visible {
   background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px var(--color-seagull);
+  outline: 3px solid var(--color-seagull);
 }
 
 .hotels__filter-price label {
@@ -979,7 +978,6 @@ img {
   border-style: none;
   border-radius: 5px;
   cursor: pointer;
-  outline: none;
 }
 
 .hotels__filter-slider button:last-child {
@@ -991,15 +989,13 @@ img {
 }
 
 .hotels__filter-slider button:focus-visible {
-  box-shadow:
-    0 0 0 3px var(--color-seagull),
-    0 7px 13px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.25);
+  outline: 3px solid var(--color-seagull)
 }
 
 .hotels__filter-slider button:active {
-  box-shadow:
-    0 0 0 2px var(--color-seagull),
-    0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid var(--color-seagull)
 }
 
 .catalog {
@@ -1157,7 +1153,9 @@ img {
 
 .card__details,
 .card__favorite {
-  min-width: 140px;
+  width: 140px;
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .card__ratings {
@@ -1237,8 +1235,10 @@ img {
 .modal {
   position: relative;
   width: 717px;
+  max-height: 80vh;
   margin-top: 55px;
   padding: 64px 70px;
+  overflow-y: auto;
   background-color: var(--color-default-white);
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -1261,7 +1261,6 @@ img {
   top: 64px;
   right: 52px;
   cursor: pointer;
-  outline: none;
 }
 
 .modal__close::before {
@@ -1284,7 +1283,7 @@ img {
 }
 
 .modal__close:focus-visible {
-  box-shadow: 0 0 0 3px var(--color-seagull);
+  outline: 3px solid var(--color-seagull)
 }
 
 .modal__close:active::before {
@@ -1361,7 +1360,6 @@ img {
   border-radius: 4px;
   box-sizing: border-box;
   background-color: var(--color-white-smoke);
-  outline: none;
 }
 
 .input__wrapper input:hover,
@@ -1370,7 +1368,7 @@ img {
 }
 
 .input__wrapper input:not([type="number"]):focus-visible {
-  box-shadow: 0 0 0 3px var(--color-seagull);
+  outline: 3px solid var(--color-seagull);
 }
 
 .input__wrapper_number {
@@ -1386,6 +1384,7 @@ img {
   text-align: center;
   appearance: none;
   -moz-appearance: textfield;
+  outline: none;
 }
 
 .input__wrapper_number input::-webkit-outer-spin-button,
@@ -1413,7 +1412,7 @@ img {
 .input__wrapper_number button:focus-visible::before,
 .input__wrapper_number button:focus-visible::before {
   opacity: 1;
-  box-shadow: 0 0 0 3px var(--color-seagull);
+  outline: 3px solid var(--color-seagull);
 }
 
 .input__wrapper_number button:active::before {
