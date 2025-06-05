@@ -205,6 +205,7 @@ img {
 }
 
 .btn_transparent:disabled {
+  background-color: transparent;
   color: rgba(255, 255, 255, 0.1);
 }
 
@@ -306,7 +307,7 @@ img {
 }
 
 .user-menu__link_search {
-  background-image: url(../images/icon-search.svg);
+  background-image: url("../images/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -314,7 +315,7 @@ img {
 .user-menu__link_favorites {
   position: relative;
   color: var(--color-default-white);
-  background-image: url(../images/icon-favorites.svg);
+  background-image: url("../images/icon-favorites.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -346,8 +347,8 @@ img {
 .hero {
   padding-top: 51px;
   padding-bottom: 82px;
-  background-color: var(--color-piction-blue);
-  background-image: url(../images/background-mask.svg), url(../images/hero-background.jpg);
+  background-color: #427ba6;
+  background-image: url("../images/background-mask.svg"), url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
   background-position: 50% 100%, 50% 50%;
@@ -495,15 +496,15 @@ img {
 }
 
 .features__item_house {
-  background-image: url(../images/icon-home.svg);
+  background-image: url("../images/icon-home.svg");
 }
 
 .features__item_food {
-  background-image: url(../images/icon-food.svg);
+  background-image: url("../images/icon-food.svg");
 }
 
 .features__item_gift {
-  background-image: url(../images/icon-gift.svg);
+  background-image: url("../images/icon-gift.svg");
 }
 
 .features__item:nth-child(odd) {
@@ -559,8 +560,8 @@ img {
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
-  background-color: var(--color-dorado);
-  background-image: url(../images/subscrube-bg.jpg);
+  background-color: #3a6375;
+  background-image: url("../images/subscrube-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-default-white);
@@ -722,8 +723,8 @@ img {
 
 .hotels {
   padding: 35px 70px 70px;
-  background-color: var(--color-dorado);
-  background-image: url(../images/filter-bg.jpg);
+  background-color: #40474d;
+  background-image: url("../images/filter-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-default-white);
@@ -758,7 +759,7 @@ img {
   height: 20px;
   left: -18px;
   top: calc(50% - 7px);
-  background-image: url(../images/icon-arrow-right.svg);
+  background-image: url("../images/icon-arrow-right.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 0;
@@ -773,7 +774,7 @@ img {
   position: relative;
   margin-left: -9px;
   padding: 8px 16px;
-  background-image: url(../images/icon-house.svg);
+  background-image: url("../images/icon-house.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 10;
@@ -864,7 +865,7 @@ img {
 }
 
 .hotels__filter-text:has(input[type="checkbox"]:checked).hotels__filter-text::after {
-  background-image: url(../images/icon-tick.svg);
+  background-image: url("../images/icon-tick.svg");
   background-size: 12px 10px;
   background-position: 4px calc(50% + 1px);
 }
@@ -874,7 +875,7 @@ img {
 }
 
 .hotels__filter-text:has(input[type="radio"]:checked).hotels__filter-text::after {
-  background-image: url(../images/icon-circle.svg);
+  background-image: url("../images/icon-circle.svg");
   background-size: 10px 10px;
   background-position: 50% 50%;
 }
@@ -1011,16 +1012,17 @@ img {
 
 .hotels__filter-slider button:focus-visible {
   box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.25);
-  outline: 3px solid var(--color-seagull)
+  outline: 3px solid var(--color-seagull);
 }
 
 .hotels__filter-slider button:active {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
-  outline: 2px solid var(--color-seagull)
+  outline: 2px solid var(--color-seagull);
 }
 
 .catalog {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 50px 70px 60px;
   row-gap: 40px;
 }
@@ -1047,7 +1049,7 @@ img {
   border: 2px solid var(--color-whisper);
   border-radius: 4px;
   background-color: var(--color-default-white);
-  background-image: url(../images/icon-arrow-down.svg);
+  background-image: url("../images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 18px) 50%;
   -webkit-appearance: none;
@@ -1090,15 +1092,15 @@ img {
 }
 
 .catalog__view_tile {
-  background-image: url(../images/icon-tile.svg);
+  background-image: url("../images/icon-tile.svg");
 }
 
 .catalog__view_card {
-  background-image: url(../images/icon-card.svg);
+  background-image: url("../images/icon-card.svg");
 }
 
 .catalog__view_list {
-  background-image: url(../images/icon-list.svg);
+  background-image: url("../images/icon-list.svg");
 }
 
 .catalog__view_active {
@@ -1195,7 +1197,7 @@ img {
 .card__star {
   width: 18px;
   height: 17px;
-  background-image: url(../images/icon-star.svg);
+  background-image: url("../images/icon-star.svg");
   background-repeat: no-repeat;
 }
 
@@ -1292,7 +1294,7 @@ img {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  background-image: url(../images/icon-cross.svg);
+  background-image: url("../images/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   top: calc(50% - 10px);
@@ -1305,7 +1307,7 @@ img {
 }
 
 .modal__close:focus-visible {
-  outline: 3px solid var(--color-seagull)
+  outline: 3px solid var(--color-seagull);
 }
 
 .modal__close:active::before {
@@ -1355,6 +1357,7 @@ img {
 
 .input__wrapper_date {
   max-width: 440px;
+  min-width: 300px;
 }
 
 .input__wrapper_date::after {
@@ -1363,7 +1366,7 @@ img {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(../images/icon-calendar.svg);
+  background-image: url("../images/icon-calendar.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   top: 13px;
@@ -1426,12 +1429,10 @@ img {
   outline: none;
 }
 
-.input__wrapper_number button:hover::before,
-.input__wrapper_number button:focus-visible::before {
+.input__wrapper_number button:hover::before {
   opacity: 1;
 }
 
-.input__wrapper_number button:focus-visible::before,
 .input__wrapper_number button:focus-visible::before {
   opacity: 1;
   outline: 3px solid var(--color-seagull);
@@ -1500,11 +1501,11 @@ img {
 }
 
 .input__decrease::before {
-  background-image: url(../images/icon-minus.svg);
+  background-image: url("../images/icon-minus.svg");
 }
 
 .input__increase::before {
-  background-image: url(../images/icon-plus.svg);
+  background-image: url("../images/icon-plus.svg");
 }
 
 .input__info-btn {
@@ -1520,7 +1521,7 @@ img {
   border: none;
   border-radius: 50%;
   background-color: var(--color-seagull);
-  background-image: url(../images/icon-info.svg);
+  background-image: url("../images/icon-info.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;

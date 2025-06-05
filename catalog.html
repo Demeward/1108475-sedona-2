@@ -89,9 +89,9 @@
                 <fieldset class="hotels__fieldset">
                   <legend class="title title_h4">Стоимость, ₽:</legend>
                   <div class="hotels__filter-price">
-                    <input type="number" name="min-price" id="min-price" min="0" max="9000" value="0">
+                    <input type="number" name="min-price" id="min-price" min="0" max="12000" value="0">
                     <label for="min-price">от</label>
-                    <input type="number" name="max-price" id="max-price" min="0" max="9000" value="9000">
+                    <input type="number" name="max-price" id="max-price" min="0" max="12000" value="9000">
                     <label for="max-price">до</label>
                   </div>
                   <div class="hotels__filter-slider">
@@ -231,6 +231,7 @@
             <h2 class="title title_h2">Подпишитесь на&nbsp;рассылку</h2>
             <p>Только полезная информация и&nbsp;никакого спама,<br>честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
+              <label for="email" class="visually-hidden">Подписаться на рассылку</label>
               <input type="email" name="user-email" id="email" placeholder="Ваш e-mail" required>
               <button type="submit" class="subscribe__button btn btn_blue">Подписаться</button>
             </form>

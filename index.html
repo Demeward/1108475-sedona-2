@@ -134,6 +134,7 @@
             <h2 class="title title_h2 title_white">Подпишитесь на&nbsp;рассылку</h2>
             <p>Только полезная информация и&nbsp;никакого спама,<br>честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
+              <label for="email" class="visually-hidden">Подписаться на рассылку</label>
               <input type="email" name="user-email" id="email" placeholder="Ваш e-mail" required>
               <button type="submit" class="subscribe__button btn btn_blue">Подписаться</button>
             </form>
@@ -263,14 +264,7 @@
       </div>
     </div>
 
-    <script>
-      document.querySelector(".search-hotel__popup-btn").addEventListener("click", () => {
-        document.querySelector(".modal-overlay").classList.add("modal-overlay_opened");
-      })
-      document.querySelector(".modal__close").addEventListener("click", () => {
-        document.querySelector(".modal-overlay").classList.remove("modal-overlay_opened");
-      })
-    </script>
+    <script src="./scripts/script.js"></script>
 
   </body>
 </html>
